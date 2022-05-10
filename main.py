@@ -44,9 +44,12 @@ def guess():
                 string_tried += letter + " "
         print("You have tried the following letters: " + string_tried)
     print("You have " + str(attempts) + " attempts remaining.\n")
-    guessed = input("Enter your guess: ")
+    guessed = input("Enter your guess: ").lower()
     if len(guessed) != 1 or not guessed.isalpha():
         print("Invalid guess, please enter ONE letter!\n")
+        guess()
+    elif guessed in letters_tried:
+        print("You have already tried that letter!\n")
         guess()
     else:
         letters_tried.append(guessed)
