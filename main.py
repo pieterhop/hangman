@@ -5,6 +5,7 @@ def get_random_word():
     words = "these apples taste like dogshit abracadabra flipping NFTs are fun".split()
     return words[random.randint(0, len(words) - 1)].lower()
 
+
 def init_game():
     global secret
     global word_state
@@ -15,6 +16,7 @@ def init_game():
     word_state = '_' * len(secret)
     letters_tried = []
     attempts = len(set(secret)) + 3
+
 
 def play_game():
     init_game()
@@ -55,7 +57,6 @@ def guess():
     else:
         letters_tried.append(guessed)
         attempts -= 1
-
         indices_guessed = []
         for i, letter in enumerate(secret):
             if guessed == letter:
