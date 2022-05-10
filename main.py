@@ -1,5 +1,6 @@
 import random
 
+
 def get_random_word():
     words = "these apples taste like dogshit abracadabra flipping NFTs are fun".split()
     return words[random.randint(0, len(words) - 1)].lower()
@@ -61,9 +62,9 @@ def guess():
             indices_guessed.append(i)
     if indices_guessed:
         print("\nYou guessed a letter! It appeared " + str(len(indices_guessed)) + " time(s).")
-        for i in indices_guessed:
-            word_state = word_state[:i] + guessed + word_state[i+1:]
-    else:
+        for index in indices_guessed:
+            word_state = word_state[:index] + guessed + word_state[index + 1:]
+    elif len(indices_guessed) > 0:
         print("The letter you guessed didn't appear in the word.\n")
     
 
