@@ -56,16 +56,16 @@ def guess():
         letters_tried.append(guessed)
         attempts -= 1
 
-    indices_guessed = []
-    for i, letter in enumerate(secret):
-        if guessed == letter:
-            indices_guessed.append(i)
-    if indices_guessed:
-        print("\nYou guessed a letter! It appeared " + str(len(indices_guessed)) + " time(s).")
-        for index in indices_guessed:
-            word_state = word_state[:index] + guessed + word_state[index + 1:]
-    elif len(indices_guessed) > 0:
-        print("The letter you guessed didn't appear in the word.\n")
+        indices_guessed = []
+        for i, letter in enumerate(secret):
+            if guessed == letter:
+                indices_guessed.append(i)
+        if indices_guessed:
+            print("\nYou guessed a letter! It appeared " + str(len(indices_guessed)) + " time(s).")
+            for index in indices_guessed:
+                word_state = word_state[:index] + guessed + word_state[index + 1:]
+        else:
+            print("The letter you guessed didn't appear in the word.\n")
     
 
 def check_win():
@@ -80,7 +80,7 @@ def ask_rematch():
     while rematch not in ["y", "n"]:
         rematch = input("Do you want to play another game? Y / N\n").lower()
     if rematch == "y":
-        main()
+        play_game()
     elif rematch == "n":
         print("Thanks for playing Hangman, the game.\n")
 
