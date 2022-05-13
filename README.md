@@ -10,10 +10,12 @@ Code reviews were carried out by our team members in the attempt of detecting er
 
 Moving onto more robust testing techniques we proceed with code coverage tests.
 
-We have conducted tests on 1 letter words, random length words (between 1 and 10) and 10+ letter words as well as form of boundary analysis testing.
-That said, for clarity and simplicity reasons we will be using a set word: "apple" instead of generating a random word for each iteration of the game while describing our testing strategy.
+We have conducted tests on 1 letter words, random length words (between 1 and 10) and 10+ letter words as form of boundary analysis testing.
+That said, while describing our testing strategy we will be using a set word: "apple" instead of generating a random word for each iteration of the game for clarity and simplicity.
 
 We use the following control flow graph to illustrate a simplified version of the execution of our program:
+
+![simple_control_flow](hangman/simple_control_flow.jpg?raw=true "Title")
 
 To achieve 100% Decision/condition coverage we will essentially need to test 5 different true-false branches of the decision tree:
 A. **While Attempts > 0**
