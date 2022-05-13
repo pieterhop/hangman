@@ -16,7 +16,8 @@ That said, while describing our testing strategy we will be using a set word: "a
 
 We use the following control flow graph to illustrate a simplified version of the execution of our program:
 
-![simple_control_flow](https://user-images.githubusercontent.com/49749992/168287113-6f8ce53b-afcd-41cb-b3b8-2afd9d5085cc.jpg)
+![control_flow](https://user-images.githubusercontent.com/49749992/168287967-f4ab52ec-f200-4451-92d5-b0dda18ee3ae.jpg)
+
 
 To achieve 100% Decision/condition coverage we will essentially need to test 5 different true-false branches of the decision tree:
 A. **While Attempts > 0**
