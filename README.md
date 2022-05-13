@@ -18,6 +18,7 @@ We use the following control flow graph to illustrate a simplified version of th
 
 ![control_flow](https://user-images.githubusercontent.com/49749992/168287967-f4ab52ec-f200-4451-92d5-b0dda18ee3ae.jpg)
 
+It is important to note that this graph represents a simplified version of the program focused on the decision making process for testing purposes. More details regarding some parts of the graph can be found directly in the code (how "handle guessed letter", "if win", "guessed = input()" is being handled etc.).
 
 To achieve 100% Decision/condition coverage we will essentially need to test 5 different true-false branches of the decision tree:
 A. **While Attempts > 0**
