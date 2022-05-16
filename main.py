@@ -1,5 +1,5 @@
 import random
-
+rematch = True
 
 def get_random_word():
     words = "these apples taste like flowers abracadabra flipping trampolines are fun".split()
@@ -83,14 +83,16 @@ def ask_rematch():
     if rematch == "y":
         play_game()
     elif rematch == "n":
+        rematch = False
         print("Thanks for playing Hangman, the game.\n")
 
 
 def main():
     print("\nWelcome to Hangman, the game.")
     print("LET'S PLAY!\n")
-    play_game()
-    ask_rematch()
+    while rematch == True:
+        play_game()
+        ask_rematch()
 
 
 main()
