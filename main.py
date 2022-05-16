@@ -2,7 +2,7 @@ import random
 
 
 def get_random_word():
-    words = "these apples taste like dogshit abracadabra flipping NFTs are fun".split()
+    words = "these apples taste like flowers abracadabra flipping trampolines are fun".split()
     return words[random.randint(0, len(words) - 1)].lower()
 
 
