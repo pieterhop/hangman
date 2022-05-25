@@ -21,10 +21,15 @@ We use the following control flow graph to illustrate a simplified version of th
 It is important to note that this graph represents a simplified version of the program focused on the decision making process for testing purposes. More details regarding some parts of the graph can be found directly in the code (how "handle guessed letter", "if win", "guessed = input()" is being handled etc.).
 
 To achieve 100% Decision/condition coverage we will essentially need to test 5 different true-false branches of the decision tree:
+
 A. **While Attempts > 0**
+
 B. **If win** (which corresponds to no "_" remaining in the word that is being guessed)
+
 C. **If attempts == 0** (no remaining attempts left)
+
 D. **If len(guessed) != 1 || is not alphabetical** (If length of the user input is not equal to 1 or if its not a valid data type)
+
 E. **If guessed in letters_tried** (If guessed letter has already been guessed before)
 
 The following test cases will be focused on statements B-E since statement A does not depend on the user input but on the to-be guessed word that is selected by the code.
