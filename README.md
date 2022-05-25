@@ -27,7 +27,7 @@ C. **If attempts == 0** (no remaining attempts left)
 D. **If len(guessed) != 1 || is not alphabetical** (If length of the user input is not equal to 1 or if its not a valid data type)
 E. **If guessed in letters_tried** (If guessed letter has already been guessed before)
 
-Statement number A does not depend on the user input but on the to-be guessed word that is selected by the code so the following test cases will be focused on statements B-E.
+The following test cases will be focused on statements B-E since statement A does not depend on the user input but on the to-be guessed word that is selected by the code.
 
 Additional notes:
  - Individual user inputs are divided by "-" and each individual input corresponds to the parameter that is passed to the guess() function (guessed = input() in the simplified control flow graph).
