@@ -66,5 +66,3 @@ Tests 6-11 are targeted at the conditional statement E. Equivalence partitions o
 |Input length < 1  | Input length == 1 | Input length > 1
 
 Tests 11-13 are targeted at testing the flow of the game (outlined in "Additional Notes" above)
-
-https://docs.google.com/document/d/1p6x-lP-ZEFm-ysKOfvX4CSRT71yZGDSNOU3-MKZn-e4/edit?usp=sharing
